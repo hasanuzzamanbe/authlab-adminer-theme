@@ -14,5 +14,6 @@ class AdminerMenuScroller
     		echo '<script'.nonce().'src="/js/menuScroller.js"></script>';
 
     	}
+
     }
 }
