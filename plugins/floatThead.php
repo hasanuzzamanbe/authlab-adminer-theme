@@ -4,7 +4,7 @@ class AdminerFloatThead
 {
     public function head()
     {
-        echo '<script'.nonce().'src="/js/jquery.floatThead.js"></script>'; ?>
+        echo '<script'.nonce().'src="http://localhost/adminer/js/jquery.floatThead.js"></script>'; ?>
 
         <script <?php echo nonce(); ?> type="text/javascript">
             $(document).ready(function () {
