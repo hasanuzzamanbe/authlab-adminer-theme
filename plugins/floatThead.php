@@ -4,7 +4,18 @@ class AdminerFloatThead
 {
     public function head()
     {
-        echo '<script'.nonce().'src="/js/jquery.floatThead.js"></script>'; ?>
+
+        if($GLOBALS['serverName'] == 'localhost'){
+
+            echo '<script'.nonce().'src="http://'. $GLOBALS['serverName'] .'/'. $GLOBALS['urlParts'].'/js/jquery.floatThead.js"></script>';
+
+
+        }else {
+
+            echo '<script'.nonce().'src="/js/jquery.floatThead.js"></script>'; 
+
+        }; ?>
+
 
         <script <?php echo nonce(); ?> type="text/javascript">
             $(document).ready(function () {
