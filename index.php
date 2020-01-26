@@ -38,12 +38,12 @@ function adminer_object()
 
         function credentials()
         {
-            return ['localhost', 'root', 'root'];
+            return ['localhost', 'root', ''];
         }
 
         function login($login, $password)
         {
-            return ($login == 'root' && $password == 'root');
+            return ($login == 'root' && $password == '');
         }
     }
 
