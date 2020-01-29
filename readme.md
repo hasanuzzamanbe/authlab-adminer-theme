@@ -1,4 +1,4 @@
-# Custom Adminer Package with theme and plugin support
+# Custom Adminer Package with dark theme
 
 ### Text from the creator (I just forked and add localhost support)
 It's an adminer theme with very clean look and you can add your own logo. We have made it for using at @authlab
