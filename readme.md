@@ -23,11 +23,11 @@ Then You can see a login window of your MySql like this picture bellow. Login wi
 
 N.B: For development purposes, I ignored password protection so you can log in with the user: root and password will be empty.
 You can add password support by editing file index.php and replace the `credentials` method with `return ['localhost', 'root', 'root'];`
-and login method with `return ($login == 'root' && $password == 'root');`
+and login method with `return ($login == 'root' && $password == '');`
 
 
 #### Help:
-If you need any help feel free to ask <a href="https://www.hasanuzzaman.com" traget="_blank"> me </a> :) 
+If you need any help feel free to ask <a href="https://www.hasanuzzaman.com" traget="_blank"> me </a> :)
 
 ![Alt text](/login_screenshot.png?raw=true "Screenshot")
 

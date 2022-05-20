@@ -30,20 +30,14 @@ function adminer_object()
 
     class AdminerCustomized extends AdminerPlugin
     {
-
         function permanentLogin($create = false)
         {
             return "90b6de9470e50e76a8f81e78dd4707a7";
         }
 
-        function credentials()
-        {
-            return ['localhost', 'root', ''];
-        }
-
         function login($login, $password)
         {
-            return ($login == 'root' && $password == '');
+            return ($login == $login && $password == $password);
         }
     }
 
