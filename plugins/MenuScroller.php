@@ -2,18 +2,15 @@
 
 class AdminerMenuScroller
 {
-    public function head()
-    {
-    
-    	if($GLOBALS['serverName'] == 'localhost'){
+	public function head()
+	{
 
-    		echo '<script'.nonce().'src="http://'. $GLOBALS['serverName'] .'/'. $GLOBALS['urlParts'] .'/js/menuScroller.js"></script>';
+		if ($GLOBALS['serverName'] == 'localhost') {
 
-    	}else {
+			echo '<script' . nonce() . 'src="http://' . $GLOBALS['serverName'] . '/' . $GLOBALS['urlParts'] . '/js/menuScroller.js"></script>';
+		} else {
 
-    		echo '<script'.nonce().'src="/js/menuScroller.js"></script>';
-
-    	}
-
-    }
+			echo '<script' . nonce() . 'src="/js/menuScroller.js"></script>';
+		}
+	}
 }

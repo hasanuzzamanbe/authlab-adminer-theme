@@ -30,7 +30,7 @@ class AdminerCollations
             return;
         }
 
-        ?>
+?>
 
         <script <?php echo nonce(); ?>>
             (function(document) {
@@ -38,11 +38,11 @@ class AdminerCollations
 
                 const characterSets = [
                     <?php
-                        echo "'(" . lang('collation') . ")'";
+                    echo "'(" . lang('collation') . ")'";
 
-                        foreach ($this->characterSets as $characterSet) {
-                            echo ", '" . $characterSet . "'";
-                        }
+                    foreach ($this->characterSets as $characterSet) {
+                        echo ", '" . $characterSet . "'";
+                    }
                     ?>
                 ];
 
@@ -89,9 +89,8 @@ class AdminerCollations
                     return "";
                 }
             })(document);
-
         </script>
 
-        <?php
+<?php
     }
 }

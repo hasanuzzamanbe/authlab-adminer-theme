@@ -6,17 +6,20 @@
  * @license http://www.apache.org/licenses/LICENSE-2.0 Apache License, Version 2.0
  * @license http://www.gnu.org/licenses/gpl-2.0.html GNU General Public License, version 2 (one or other)
  */
-class AdminerDatabaseHide {
+class AdminerDatabaseHide
+{
     protected $disabled;
 
     /**
      * @param array case insensitive database names in values
      */
-    function __construct($disabled) {
+    function __construct($disabled)
+    {
         $this->disabled = array_map('strtolower', $disabled);
     }
 
-    function databases($flush = true) {
+    function databases($flush = true)
+    {
         $return = array();
         foreach (get_databases($flush) as $db) {
             if (!in_array(strtolower($db), $this->disabled)) {
@@ -25,5 +28,4 @@ class AdminerDatabaseHide {
         }
         return $return;
     }
-
 }

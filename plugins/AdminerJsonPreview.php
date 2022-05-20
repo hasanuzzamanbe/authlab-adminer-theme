@@ -38,7 +38,7 @@ class AdminerJsonPreview
      */
     public function head()
     {
-        ?>
+?>
 
         <style>
             /* Table */
@@ -59,7 +59,8 @@ class AdminerJsonPreview
                 border-bottom: none;
             }
 
-            .checkable .json .checked th, .checkable .json .checked td {
+            .checkable .json .checked th,
+            .checkable .json .checked td {
                 background: transparent;
             }
 
@@ -117,7 +118,8 @@ class AdminerJsonPreview
             }
 
             /* No javascript support */
-            .nojs .json-icon, .nojs .json-link {
+            .nojs .json-icon,
+            .nojs .json-link {
                 display: none;
             }
 
@@ -161,7 +163,7 @@ class AdminerJsonPreview
             })(document);
         </script>
 
-        <?php
+<?php
     }
 
     public function selectVal(&$val, $link, $field, $original)
